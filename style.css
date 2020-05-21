@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "Header Header Header Header" "Family-Photo Family-Photo Family-Photo Family-Photo" "Mission-Statement Mission-Statement Mission-Statement Mission-Statement" "Whats-New Whats-New Members Members" "Leadership Leadership Leadership Leadership" "Contact-Us Contact-Us Contact-Us Contact-Us";
+  }
+  
+  .Header { grid-area: Header; }
+  
+  .Family-Photo { grid-area: Family-Photo; }
+  
+  .Mission-Statement { grid-area: Mission-Statement; }
+  
+  .Whats-New { grid-area: Whats-New; }
+  
+  .Members { grid-area: Members; }
+  
+  .Leadership { grid-area: Leadership; }
+  
+  .Contact-Us { grid-area: Contact-Us; }
