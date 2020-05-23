@@ -6,16 +6,37 @@
     grid-template-areas: "Header Header Header Header" "Family-Photo Family-Photo Family-Photo Family-Photo" "Mission-Statement Mission-Statement Mission-Statement Mission-Statement" "Whats-New Whats-New Members Members" "Leadership Leadership Leadership Leadership" "Contact-Us Contact-Us Contact-Us Contact-Us";
   }
   
-  .Header { grid-area: Header; }
+  .Header { 
+    grid-area: Header; 
+    outline: 2px dotted red;
+  }
   
-  .Family-Photo { grid-area: Family-Photo; }
+  .Family-Photo { 
+    grid-area: Family-Photo; 
+    outline: 2px dotted green;
+  }
   
-  .Mission-Statement { grid-area: Mission-Statement; }
+  .Mission-Statement { 
+    grid-area: Mission-Statement;
+    outline: 2px dotted orange; 
+  }
   
-  .Whats-New { grid-area: Whats-New; }
+  .Whats-New { 
+    grid-area: Whats-New;
+    outline: 2px dotted blue; 
+  }
   
-  .Members { grid-area: Members; }
+  .Members { 
+    grid-area: Members; 
+    outline: 2px dotted purple;
+  }
   
-  .Leadership { grid-area: Leadership; }
+  .Leadership { 
+    grid-area: Leadership; 
+    outline: 2px dotted black;
+  }
   
-  .Contact-Us { grid-area: Contact-Us; }
+  .Contact-Us { 
+    grid-area: Contact-Us; 
+    outline: 2px dotted cyan;
+  }
