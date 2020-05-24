@@ -2,8 +2,12 @@
 <html>
 <head>
   <title>Login</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  <link rel="stylesheet" href="theauxm.github.io/stylesheets/login.css">
+
+</head>
+<body>
   <header class="navigation">
-    <span>This is Triangle's Login page.</span>
     <a href='../index.html'>Home</a>
     <a href='about.html'>About</a>
     <a href='donate.html'>Donate</a>
@@ -12,8 +16,14 @@
     <a href='members.html'>Members</a>
     <a href='whatsnew.html'>What's New</a>
   </header>
-</head>
-<body>
-    
+  <div class="login">
+    <form>
+      <label for="uname">Username:</label><br>
+      <input type="text" id="uname" name="uname"><br>
+      <label for="pw">Password:</label><br>
+      <input type="password" id="pw" name="pw"><br>
+      <input type="submit" value="Login">
+    </form>
+  </div>
 </body>
 </html>
