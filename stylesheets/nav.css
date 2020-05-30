@@ -5,7 +5,6 @@ body {
   
   .Navigation { 
     grid-area: Navigation; 
-    outline: 2px dotted red;
     overflow: hidden;
     background-color: #333;
   }
