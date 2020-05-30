@@ -5,21 +5,11 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-  <script>
-    $(function(){
-      var includes = $('[data-include]');
-      jQuery.each(includes, function(){
-        var file = 'pages/' + $(this).data('include') + '.html';
-        $(this).load(file);
-      });
-    });
-  </script>
 </head>
 <body>
     <div class="grid-container">
-      <div class="Navigation" data-include="nav">
-
+      <div class="Navigation">
+        {% include "./pages/nav.html" %}
         
       </div>
       <div class="mission">
