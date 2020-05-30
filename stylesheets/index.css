@@ -1,17 +1,6 @@
 @import url("nav.css");
+@import url("nromalize-style.css");
 
-h1{
-  font-family: 'Merriweather', serif;
-}
-h2{
-  font-family: 'Merriweather', serif;
-}
-p{
-  font-family: 'Open Sans', sans-serif;
-}
-a{
-  font-family: 'Open Sans', sans-serif;
-}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
