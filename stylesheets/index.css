@@ -1,6 +1,9 @@
 h1{
   font-family: 'Merriweather', serif;
 }
+h2{
+  font-family: 'Merriweather', serif;
+}
 p{
   font-family: 'Open Sans', sans-serif;
 }
@@ -73,8 +76,16 @@ a{
   font-family: 'Open Sans', sans-serif;
 
 }
-.new { grid-area: new; }
-
+.new {
+  grid-area: new;
+  background-color: #ECEFF1;
+}
+.new article{
+  background-color: #FFF;
+  margin: 1em;
+  padding: 0.5em 0;
+  border-radius: 0.2em;
+}
 .members { grid-area: members; }
 
 .leadership { grid-area: leadership; }
