@@ -1,4 +1,5 @@
 @import url("nav.css");
+@import url("nromalize-style.css");
 
 .grid-container {
     display: grid;
@@ -7,18 +8,18 @@
     gap: 1px 1px;
     grid-template-areas: "Navigation Navigation Navigation Navigation" "QA QA Testimony Testimony" "Information Information Testimony Testimony";
   }
-  
-  .QA { 
-      grid-area: QA; 
+
+  .QA {
+      grid-area: QA;
       outline: 2px dotted green;
     }
-  
-  .Testimony { 
+
+  .Testimony {
       grid-area: Testimony;
-      outline: 2px dotted orange; 
+      outline: 2px dotted orange;
     }
-  
-  .Information { 
-      grid-area: Information; 
+
+  .Information {
+      grid-area: Information;
       outline: 2px dotted blue;
     }
