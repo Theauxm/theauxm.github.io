@@ -101,16 +101,17 @@
 
 .triangle_photo {
   grid-area: triangle_photo;
-  position: relative;
-  background: 
+  background: rgba(0, 0, 0, 0.1);
 }
-body {
-  margin: 0;
-}
-.triangle_photo img{
+.main_image{
   width: 90%;
+  max-width: 1480px;
   display: block;
-  margin: auto
+  margin: auto;
+  position: relative;
+}
+.main_image img{
+  width: 100%;
 }
 .text_block{
   position: absolute;
