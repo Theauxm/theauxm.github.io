@@ -1,10 +1,10 @@
 @import url("nav.css");
-@import url("nromalize-style.css");
+@import url("normalize-style.css");
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.09fr 1fr 0.3fr 1fr 1fr 1fr;
+  grid-template-rows: 3.5em 1fr 0.3fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas: "Navigation Navigation" "triangle_photo triangle_photo" "mission mission" "new members" "leadership leadership" "contact contact";
 }
@@ -47,7 +47,21 @@
 }
 .new {
   grid-area: new;
-  background-color: #ECEFF1;
+  background-color: #82273E;
+}
+.new h1{
+  background: #82273E;
+  color: #FFF;
+  padding: 0.5em 0em 0.5em 0em;
+  text-align: center;
+  margin: 0.2em;
+}
+.new h2{
+  padding: 0 1em;
+}
+.new p{
+  font-size: 1.1vw;
+  padding: 0 1em;
 }
 .new article{
   background-color: #FFF;
@@ -55,7 +69,31 @@
   padding: 0.5em 0;
   border-radius: 0.2em;
 }
-.members { grid-area: members; }
+.members {
+  grid-area: members;
+  background: #82273E;
+}
+.member_item{
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+  grid-template-areas: "profile_image member_info";
+  padding: 0.5em 0;
+}
+.member_item a{
+  color: #82273E;
+}
+.members h1{
+  background: #82273E;
+  color: #FFF;
+  padding: 0.5em 0em 0.5em 0em;
+  text-align: center;
+  margin: 0.2em;
+}
+.members img{
+  width: 100%;
+}
 
 .leadership { grid-area: leadership; }
 
@@ -64,12 +102,15 @@
 .triangle_photo {
   grid-area: triangle_photo;
   position: relative;
+  background: 
 }
 body {
   margin: 0;
 }
 .triangle_photo img{
-  width: 100%;
+  width: 90%;
+  display: block;
+  margin: auto
 }
 .text_block{
   position: absolute;

@@ -1,6 +1,5 @@
 @import url("nav.css");
-@import url("nromalize-style.css");
-
+@import url("normalize-style.css");
 .login{
 	width: 40%;
 	background: #ECEFF1;
