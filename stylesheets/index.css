@@ -4,7 +4,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3.5em 1fr 0.3fr 1fr 1fr 1fr;
+  grid-template-rows: 3.4em 0.75fr 0.3fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas: "Navigation Navigation" "triangle_photo triangle_photo" "mission mission" "new members" "leadership leadership" "contact contact";
 }
@@ -16,11 +16,12 @@
   gap: 1px 1px;
   grid-template-areas: "mission_text join";
   grid-area: mission;
+  margin: 0 5%;
 }
 
 .mission_text {
   grid-area: mission_text;
-  margin-left: 1em;
+  margin: 1em 0 0 0;
 }
 
 .join { grid-area: join; }
@@ -31,18 +32,18 @@
 .join button{
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #8F8581; /* Green */
-  border: solid #000;
-  color: white;
+  background-color: #82273E;
+  color: #fff;
   padding: 15px 32px;
   text-align: center;
   font-size: 1.5vw;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
+  border-radius: none;
 
 }
 .new {
@@ -105,7 +106,7 @@
 }
 .main_image{
   width: 90%;
-  max-width: 1480px;
+  max-width: 1380px;
   display: block;
   margin: auto;
   position: relative;
