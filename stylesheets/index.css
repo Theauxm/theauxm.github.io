@@ -4,7 +4,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3.4em 0.75fr 0.3fr 1fr 1fr 1fr;
+  grid-template-rows: 3.4em 0.75fr 0.3fr 1fr 0.5fr 0.2fr;
   gap: 0px 0px;
   grid-template-areas: "Navigation Navigation" "triangle_photo triangle_photo" "mission mission" "new members" "leadership leadership" "contact contact";
 }
@@ -16,14 +16,12 @@
   gap: 1px 1px;
   grid-template-areas: "mission_text join";
   grid-area: mission;
-  margin: 0 5%;
+  margin: 0 2.5%;
 }
-
 .mission_text {
   grid-area: mission_text;
   margin: 1em 0 0 0;
 }
-
 .join { grid-area: join; }
 .mission_text p{
   font-size: 1.2vw;
@@ -43,20 +41,32 @@
   font-size: 1.5vw;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  border-radius: none;
-
+  border: 2px solid #000;
 }
 .new {
   grid-area: new;
-  background-color: #82273E;
+  padding-bottom: 2em;
 }
 .new h1{
-  background: #82273E;
   color: #FFF;
-  padding: 0.5em 0em 0.5em 0em;
   text-align: center;
-  margin: 0.2em;
+  padding: 0.5em 0;
 }
+.new_container{
+  background-color: #D9D9D9;
+  border: solid;
+  border-width: 0.1em;
+  color: #000;
+  margin: 0 1%;
+}
+.new_header{
+  background-color: #82273E;
+  width: 100%;
+  border-bottom: solid;
+  border-width: 0.15em;
+  color: #000;
+}
+
 .new h2{
   padding: 0 1em;
 }
@@ -68,47 +78,189 @@
   background-color: #FFF;
   margin: 1em;
   padding: 0.5em 0;
-  border-radius: 0.2em;
+  border: 2px solid #000;
+}
+.new button{
+  display: block;
+  margin: 0.5em auto;
+  background-color: #82273E;
+  border-color: #000;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.5vw;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  border: 2px solid #000;
 }
 .members {
   grid-area: members;
-  background: #82273E;
-}
-.member_item{
-  display: grid;
-  grid-template-columns: 30% 60%;
-  grid-template-rows: 1fr;
-  gap: 1em 1em;
-  grid-template-areas: "profile_image member_info";
-  padding: 0.5em 0;
-}
-.member_item a{
-  color: #82273E;
+  padding-bottom: 2em;
 }
 .members h1{
   background: #82273E;
   color: #FFF;
   padding: 0.5em 0em 0.5em 0em;
   text-align: center;
-  margin: 0.2em;
+}
+.members_container{
+  background-color: #D9D9D9;
+  border: solid;
+  border-width: 0.1em;
+  color: #000;
+  margin: 0 1%;
+}
+.members_header{
+  background-color: #82273E;
+  width: 100%;
+  border-bottom: solid;
+  border-width: 0.15em;
+  color: #000;
+}
+.members_content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em 1em;
+  grid-template-areas: "member_1 member_2" "member_3 member_4";
+  padding: 0.5em 0;
+  margin: 0.5em 1em;
+}
+.member_item{
+  background-color: #FFF;
+  border: 2px solid #000;
+}
+.member_item h3{
+  text-align: center;
+  padding-top: 0.3em
+}
+.member_item p{
+  padding: 0.1em;
+  margin: 0;
+  text-align: center;
+}
+.member_item span{
+  display: block;
+  margin: auto auto;
+  text-align: center;
+}
+.member_item a{
+  color: #82273E;
 }
 .members img{
+  width: 43.5%;
+  display: block;
+  margin: 0 auto;
+}
+.members button{
+  display: block;
+  margin: 0.5em auto;
+  background-color: #82273E;
+  border-color: #000;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.5vw;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  border: 2px solid #000;
+}
+.leadership {
+  grid-area: leadership;
+  background-color: #82273E;
+}
+.leadership h1{
+  background: #82273E;
+  color: #FFF;
+  padding: 0.5em 0em 0.5em 0em;
+  text-align: center;
+}
+.leadership_header{
   width: 100%;
 }
+.leadership_content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+  grid-template-areas: "leader_profile leader_profile leader_profile leader_profile leader_profile leader_profile leader_profile leader_profile";
+}
+.leader_profile{
+  padding-top: 2em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.leadership h3{
+  text-align: center;
+  padding-top: 0.3em;
+  color: #FFF;
+}
+.leadership p{
+  padding: 0.1em;
+  margin: 0;
+  text-align: center;
+  color: #FFF;
+}
+.leadership span{
+  display: block;
+  margin: auto auto;
+  text-align: center;
+}
+.leadership a{
+  color: #FFF;
+}
 
-.leadership { grid-area: leadership; }
-
-.contact { grid-area: contact; }
+.leadership img{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.contact {
+  grid-area: contact;
+  margin: 2% 2.5%;
+}
+.contact_content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0em 0em;
+  grid-template-areas: "contact_info bottom_nav";
+}
+.contact_info{
+  display: inline;
+}
+.bottom_nav{
+  display: inline;
+}
+.bottom_nav ul{
+  list-style: none;
+  text-align: right;
+}
+.bottom_nav a{
+  color: #82273E;
+}
+.contact button{
+  display: inline-block;
+  text-align: right;
+  background-color: #82273E;
+  border-color: #000;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1vw;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  border: 2px solid #000;
+}
 
 .triangle_photo {
   grid-area: triangle_photo;
   background: rgba(0, 0, 0, 0.1);
 }
 .main_image{
-  width: 90%;
-  max-width: 1380px;
+  width:95%;
+  /* max-width: 1380px; */
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
 }
 .main_image img{
