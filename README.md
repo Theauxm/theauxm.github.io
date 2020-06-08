@@ -7,7 +7,7 @@ https://theauxm.github.io/index.html
 
 Old Rose: #82273E
 
-Grey: #606A70
+Grey: #D9D9D9
 
 Yellow: #F6CE66
 
