@@ -4,9 +4,9 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3.4em 0.75fr 0.3fr 1fr 0.5fr 0.2fr;
+  grid-template-rows: 0.75fr 0.3fr 1fr 0.5fr 0.2fr;
   gap: 0px 0px;
-  grid-template-areas: "Navigation Navigation" "triangle_photo triangle_photo" "mission mission" "new members" "leadership leadership" "contact contact";
+  grid-template-areas: "triangle_photo triangle_photo" "mission mission" "new members" "leadership leadership" "contact contact";
 }
 
 .mission {

@@ -3,21 +3,26 @@ body {
   }
 
   .Navigation {
-    grid-area: Navigation;
+    height: 3.4em;
     overflow: hidden;
     background-color: #fff;
     border-bottom: solid;
     border-width: 0.2em;
     color: #82273E;
+
   }
 
   .Navigation a {
     float: right;
     color: #82273E;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5em 1em;
+    overflow:auto;
     text-decoration: none;
     font-size: 17px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .Navigation img {
