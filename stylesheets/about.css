@@ -1,8 +1,5 @@
 @import url("nav.css");
 @import url("normalize-style.css");
-
-/* @import url("index.css"); */
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
