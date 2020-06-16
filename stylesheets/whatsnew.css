@@ -13,7 +13,7 @@
 	grid-area: new_text;
 	width: 90%;
 	display: block;
-	margin: 4em auto;
+	margin: 4em 5%;
 }
 .new_text p{
 	width: 90%;
@@ -21,11 +21,11 @@
 article{
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
-	width: 80%;
+	width: 100%;
 	background: #82273E;
 	display: block;
 	margin: 0 auto;
-	padding: 1em;
+	padding: 0em;
 }
 article img{
 	width: 80%;
@@ -41,6 +41,29 @@ article h1{
 }
 .newest_event{
 	margin: 3em 0 0 0;
+	grid-area: newest_event;
+}
+.newest_event article{
+	margin-right: 5%;
+	width: 70%;
 }
 .new_feed{
+	padding: 3em 0 0 0;
+	margin: 0 2.5%;
+	grid-area: new_feed;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+	grid-gap: 2em;
+}
+.new_feed h1{
+	padding: 1em;
+}
+.new_feed p{
+	padding: 1em;
+}
+.newest_event h1{
+	padding: 1em;
+}
+.newest_event p{
+	padding: 1em;
 }
