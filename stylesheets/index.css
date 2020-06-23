@@ -3,9 +3,9 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.75fr 0.3fr 1fr 0.5fr 0.2fr;
+    grid-template-rows: 30em 0.3fr 35em 0.9fr 0.5fr 0.2fr;
     gap: 0px 0px;
-    grid-template-areas: "triangle_photo triangle_photo" "mission mission" "new members" "leadership leadership" "contact contact";
+    grid-template-areas: "triangle_photo triangle_photo" "mission mission" "new new" "members members" "leadership leadership" "contact contact";
 }
 
 .mission {
@@ -15,23 +15,22 @@
     gap: 1px 1px;
     grid-template-areas: "mission_text join";
     grid-area: mission;
-    margin: 0 2.5%;
+    margin: 0 3%;
 }
 
 .mission_text {
     grid-area: mission_text;
-    margin: 1em 0 0 0;
+    margin: 1.8em 0 0 0;
+    display: block;
 }
-
+.mission_text p {
+    font-size: 1.4vw;
+    width: 80%;
+    margin-top: 0.5em;
+}
 .join {
     grid-area: join;
 }
-
-.mission_text p {
-    font-size: 1.2vw;
-    width: 70%;
-}
-
 .join button {
     display: block;
     margin-left: auto;
@@ -46,135 +45,99 @@
     font-size: 1.5vw;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
+    border: none;
 }
-
 .new {
     grid-area: new;
-    padding-bottom: 2em;
-}
-
-.new h1 {
-    color: #FFF;
-    text-align: center;
-    padding: 0.5em 0;
-}
-
-.new_container {
-    background-color: #D9D9D9;
-    border: solid;
-    border-width: 0.1em;
-    color: #000;
-    margin: 0 1%;
-}
-
-.new_header {
     background-color: #82273E;
-    width: 100%;
-    border-bottom: solid;
-    border-width: 0.15em;
-    color: #000;
+    padding:2em 1em 2em 1em;
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr
 }
-
-.new h2 {
-    padding: 0 1em;
+.new-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 0em 2em;
 }
-
-.new p {
-    font-size: 1.1vw;
-    padding: 0 1em;
+.card{
+  background: #fff;
+  /* margin: 1em; */
+  height: 100%;
 }
-
-.new article {
-    background-color: #FFF;
-    margin: 1em;
-    padding: 0.5em 0;
-    border: 2px solid #000;
+.card img{
+  width: 100%;
 }
-
+.card h1{
+  text-align: center;
+  padding-top: 0.4em;
+  font-size: 2vw;
+}
+.card p {
+  margin: 0.5em 2.5%;
+}
+.new-info h1 {
+  text-align: center;
+  color: #fff
+}
+.new-info p {
+  font-size: 1.6vw;
+  margin: 0 0em 0 1.5em;
+  padding: 1em 0 ;
+  color: #fff;
+}
 .new button {
     display: block;
     margin: 0.5em auto;
-    background-color: #82273E;
+    background-color: #FFF;
     border-color: #000;
     padding: 10px 20px;
     text-align: center;
     font-size: 1.5vw;
-    color: #FFF;
+    color: #000;
     font-family: 'Open Sans', sans-serif;
-    border: 2px solid #000;
+    border: none;
 }
 
 .members {
     grid-area: members;
-    padding-bottom: 2em;
-}
-
-.members h1 {
-    background: #82273E;
-    color: #FFF;
-    padding: 0.5em 0em 0.5em 0em;
-    text-align: center;
-}
-
-.members_container {
-    background-color: #D9D9D9;
-    border: solid;
-    border-width: 0.1em;
-    color: #000;
-    margin: 0 1%;
-}
-
-.members_header {
-    background-color: #82273E;
-    width: 100%;
-    border-bottom: solid;
-    border-width: 0.15em;
-    color: #000;
-}
-
-.members_content {
+    background: #FFF;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1em 1em;
-    grid-template-areas: "member_1 member_2" "member_3 member_4";
-    padding: 0.5em 0;
-    margin: 0.5em 1em;
+    grid-template-columns: 0.4fr 0.6fr;
+    padding: 2em 1em;
 }
-
-.member_item {
-    background-color: #FFF;
-    border: 2px solid #000;
+.members-info h1{
+  text-align: center;
 }
-
-.member_item h3 {
-    text-align: center;
-    padding-top: 0.3em
+.members-info p{
+  font-size: 1.6vw;
+  margin: 0 1.5em 0 0.5em;
+  padding: 1em 0 ;
 }
-
-.member_item p {
-    padding: 0.1em;
-    margin: 0;
-    text-align: center;
+.members-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 0em 2em;
+  margin: 0 1em;
 }
-
-.member_item span {
-    display: block;
-    margin: auto auto;
-    text-align: center;
+.member-card{
+  border: solid 3px #82273E;
+  text-align: center;
+  width: 90%;
 }
-
-.member_item a {
-    color: #82273E;
+.member-card img{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 2em 0 1em 0;
 }
-
-.members img {
-    width: 43.5%;
-    display: block;
-    margin: 0 auto;
+.member-card h3{
+  font-size: 1.7vw;
 }
-
+.member-card p{
+  font-size: 1.3vw;
+  padding-bottom: 2em;
+}
 .members button {
     display: block;
     margin: 0.5em auto;
@@ -185,7 +148,7 @@
     font-size: 1.5vw;
     color: #FFF;
     font-family: 'Open Sans', sans-serif;
-    border: 2px solid #000;
+    border: none;
 }
 
 .leadership {
@@ -294,25 +257,21 @@
 .triangle_photo {
     grid-area: triangle_photo;
     background: rgba(0, 0, 0, 0.1);
-}
-
-.main_image {
-    width: 95%;
-    /* max-width: 1380px; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 30em;
     position: relative;
 }
 
-.main_image img {
+.triangle_photo img {
     width: 100%;
+    height: 30em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .text_block {
     position: absolute;
     display: block;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.4);
     bottom: 2.5em;
     right: 0;
     width: 30%;
@@ -321,4 +280,5 @@
 .text_block p {
     font-size: 1.5vw;
     padding: 0 1em 0 1em;
+    color: #fff;
 }
