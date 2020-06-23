@@ -22,22 +22,20 @@ article{
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
 	width: 100%;
-	background: #82273E;
+	background: #FFF;
 	display: block;
 	margin: 0 auto;
 	padding: 0em;
 }
 article img{
-	width: 80%;
-	padding: 1em;
+	width: 100%;
 	display: block;
-	margin: 0 auto;
 }
 article p{
-	color: #FFF
+	color: #000;
 }
 article h1{
-	color: #fff;
+	color: #000;
 }
 .newest_event{
 	margin: 3em 0 0 0;
@@ -46,6 +44,19 @@ article h1{
 .newest_event article{
 	margin-right: 5%;
 	width: 70%;
+}
+button {
+    display: block;
+    margin: 0.5em auto;
+    background-color: #82273E;
+    border-color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+		margin-top: 2em;
 }
 .new_feed{
 	padding: 3em 0 0 0;
