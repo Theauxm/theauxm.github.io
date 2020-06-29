@@ -1,0 +1,93 @@
+@import url("nav.css");
+@import url("normalize-style.css");
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3.4em 0.75fr 0.3fr 1fr 0.5fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas: "Navigation Navigation" "About About" "contact contact";
+}
+
+.Navigation {
+    grid-area: Navigation;
+}
+
+.About {
+    grid-area: About;
+    padding-bottom: 2em;
+    padding: 0.5em 0;
+}
+
+.contact {
+    grid-area: contact;
+    margin: 2% 2.5%;
+}
+
+.About button {
+    display: block;
+    margin: 0.5em auto;
+    background-color: #82273E;
+    border-color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid #000;
+}
+
+.About h1 {
+    color: #FFF;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+.new_container {
+    background-color: #D9D9D9;
+    border: solid;
+    border-width: 0.1em;
+    color: #000;
+    margin: 0 1%;
+}
+
+.new_header {
+    background-color: #82273E;
+    width: 100%;
+    border-bottom: solid;
+    border-width: 0.15em;
+    color: #000;
+}
+
+.About h2 {
+    padding: 0 1em;
+}
+
+.About p {
+    font-size: 1.1vw;
+    padding: 0 1em;
+}
+
+.contact_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0em 0em;
+    grid-template-areas: "contact_info bottom_nav";
+}
+
+.contact_info {
+    display: inline;
+}
+
+.bottom_nav {
+    display: inline;
+}
+
+.bottom_nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+.bottom_nav a {
+    color: #82273E;
+}

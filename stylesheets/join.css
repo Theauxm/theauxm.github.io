@@ -1,0 +1,24 @@
+@import url("nav.css");
+@import url("normalize-style.css");
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "Navigation Navigation Navigation Navigation" "QA QA Testimony Testimony" "Information Information Testimony Testimony";
+  }
+
+  .QA {
+      grid-area: QA;
+      outline: 2px dotted green;
+    }
+
+  .Testimony {
+      grid-area: Testimony;
+      outline: 2px dotted orange;
+    }
+
+  .Information {
+      grid-area: Information;
+      outline: 2px dotted blue;
+    }
