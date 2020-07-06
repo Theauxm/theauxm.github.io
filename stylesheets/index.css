@@ -1,25 +1,223 @@
 @import url("nav.css");
 @import url("normalize-style.css");
 @import url("myButton.css");
+
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30em 0.3fr 35em 0.9fr 0.5fr 0.2fr;
-    gap: 0px 0px;
-    grid-template-areas: "triangle_photo triangle_photo" "mission mission" "new new" "members members" "leadership leadership" "contact contact";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 7em 1fr;
+  grid-template-areas: "title title title" "mission mission new";
+  margin: 0 5%;
+}
+.cover-img img{
+  width: 100%;
+}
+.title {
+  grid-area: title;
+  margin: 2em 0;
+}
+.title h1{
+  font-size: 4vw;
 }
 
 .mission {
-    display: grid;
-    grid-template-columns: 1fr 0.3fr;
-    grid-template-rows: 1fr;
-    gap: 1px 1px;
-    grid-template-areas: "mission_text join";
-    grid-area: mission;
-    margin: 0 3%;
+  grid-area: mission;
+
+}
+.mission p{
+  font-size: 1.6vw;
+  width: 92%;
+}
+.mission img{
+  width: 92%;
+  height: 30em;
+  padding-top: 1em;
+}
+.mission button {
+    display: block;
+    margin: 2em auto 0 auto;
+    background-color: #82273E;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 1.5vw;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid #000;
+    border: none;
+}
+.new {
+  grid-area: new;
+  border-left: solid 1px #000;
+  float: right;
+}
+.new h2{
+  text-align: right;
+  font-size: 2.2vw;
+  padding-right: 3em;
+}
+.new h3{
+  font-size: 1.5vw;
+  padding: 1em 0;
+  text-align: center;
+}
+.new p{
+  padding-bottom: 0.5em;
+}
+article img{
+  width: 100%;
+  height: 12em;
+}
+.new article{
+  width: 80%;
+  border-bottom: solid 1px #000;
+  float: right;
+}
+.donate{
+  display: grid;
+  grid-template-columns: 23em 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "donate-title donate-text";
+  padding-top: 2em;
 }
 
-.mission_text {
+.donate-title {
+  grid-area: donate-title;
+  background: #82273E;
+}
+.donate-title h1{
+  font-size: 4vw;
+  margin: 1em;
+  color: #FFF;
+  border-right: solid 1px #FFF;
+}
+.donate-text {
+  grid-area: donate-text;
+  background: #82273E;
+
+}
+.donate-text p{
+  text-align: center;
+  color: #FFF;
+  font-size: 1.6vw;
+  margin-right: 5%;
+  margin-top: 2.5em;
+}
+.donate-text button {
+    display: block;
+    margin: 2em auto 0 auto;
+    background-color: #FFF;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 1.5vw;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid #000;
+    border: none;
+}
+
+.leadership {
+  grid-area: leadership;
+  padding-top: 2em;
+}
+.leadership h2{
+  text-align: center;
+  font-size: 2vw;
+  padding-bottom: 1em;
+}
+.leadership-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    margin: 0 5%;
+}
+
+.leader_profile {
+    padding-top: 2em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.leadership h3 {
+    text-align: center;
+    padding-top: 0.3em;
+}
+
+.leadership p {
+    padding: 0.1em;
+    margin: 0;
+    text-align: center;
+}
+
+.leadership span {
+    display: block;
+    margin: auto auto;
+    text-align: center;
+}
+
+.leadership a {
+}
+
+.leadership img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact {
+    background: #82273E;
+    margin-top: 3em;
+    padding-top: 2em;
+}
+.contact_info h3{
+  color: #FFF;
+  font-size: 2vw;
+}
+.contact p {
+  color:#FFF;
+}
+.contact_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0em 0em;
+    grid-template-areas: "contact_info bottom_nav";
+    margin: 0 5%;
+}
+
+.contact_info {
+    display: inline;
+}
+
+.bottom_nav {
+    display: inline;
+}
+
+.bottom_nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+.bottom_nav a {
+    color: #FFF;
+}
+
+.contact button {
+    display: block;
+    float: left;
+    background-color: #FFF;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 1.5vw;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid #000;
+    border: none;
+}
+
+/* .mission_text {
     grid-area: mission_text;
     margin: 1.8em 0 0 0;
     display: block;
@@ -49,7 +247,7 @@
     font-size: 1.5vw;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    /* border: 2px solid #000; */
+    border: 2px solid #000;
     border: none;
 }
 
@@ -69,7 +267,7 @@
 
 .card {
     background: #fff;
-    /* margin: 1em; */
+    margin: 1em;
     height: 100%;
 }
 
@@ -300,4 +498,4 @@
     font-size: 1.5vw;
     padding: 0 1em 0 1em;
     color: #fff;
-}
+} */
