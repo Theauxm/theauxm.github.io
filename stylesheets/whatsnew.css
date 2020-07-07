@@ -3,47 +3,47 @@
 
 .grid_container{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 0.5fr;
+	grid-template-rows: 1fr;
 	gap: 1px 1px;
-	grid-template-areas: "new_text newest_event" "new_feed new_feed";
+	grid-template-areas: "new_text newest_event";
+	margin: 0 5%;
 }
 
 .new_text{
 	grid-area: new_text;
 	width: 90%;
 	display: block;
-	margin: 4em 5%;
+	margin-top: 4em;
+	border-right: solid 1px #000;
+}
+.new_text h1{
+	font-size: 3.5vw;
+	width: 80%;
 }
 .new_text p{
-	width: 90%;
-}
-article{
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-	overflow: hidden;
-	width: 100%;
-	background: #FFF;
-	display: block;
-	margin: 0 auto;
-	padding: 0em;
-}
-article img{
-	width: 100%;
-	display: block;
-}
-article p{
-	color: #000;
-}
-article h1{
-	color: #000;
+	width: 81%;
+	font-size: 1.5vw;
 }
 .newest_event{
-	margin: 3em 0 0 0;
+	margin: 6em 0 0 0;
 	grid-area: newest_event;
 }
 .newest_event article{
 	margin-right: 5%;
-	width: 70%;
+	width: 90%;
+	float: right;
+}
+.newest_event img{
+	width: 100%;
+}
+.newest_event h3{
+	font-size: 1.7vw;
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+.newest_event p{
+	padding-top: 0.2em;
 }
 button {
     display: block;
@@ -58,23 +58,29 @@ button {
     border: none;
 		margin-top: 2em;
 }
+.title{
+	margin: 0 5%;
+	padding-top: 4em;
+}
+.title h1{
+	font-size: 3.5vw;
+}
 .new_feed{
-	padding: 3em 0 0 0;
-	margin: 0 2.5%;
-	grid-area: new_feed;
+	padding-top: 4em;
+	margin: 0 5%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
 	grid-gap: 2em;
 }
-.new_feed h1{
-	padding: 1em;
+.new_feed img{
+	width: 100%;
 }
-.new_feed p{
-	padding: 1em;
+.new_feed article{
+	width: 90%;
+	padding-right: 2em;
+	border-right: solid 1px #000;
 }
-.newest_event h1{
-	padding: 1em;
-}
-.newest_event p{
-	padding: 1em;
+article:last-of-type{
+	width: 90%;
+	border: none;
 }
